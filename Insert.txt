@@ -1,0 +1,9 @@
+CREATE PROCEDURE InsertDataIntoTable
+@Name nvarchar(50),
+@Email nvarchar(80),
+@Age int 
+AS 
+BEGIN 
+INSERT INTO tbl_sinhvien(name, email, age) 
+VALUES ( @Name, @email, @age) 
+END 
